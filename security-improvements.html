@@ -1,0 +1,22 @@
+<!-- Add these security improvements to your index.html <head> section -->
+
+<!-- Content Security Policy -->
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:;
+    script-src 'self' 'unsafe-inline';
+    img-src 'self' data: https:;
+    connect-src 'self';
+">
+
+<!-- Font Awesome with Subresource Integrity -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous">
+
+<!-- Add more security headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
