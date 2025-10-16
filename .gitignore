@@ -66,3 +66,23 @@ _site/
 # Local development
 *.local
 .vercel
+
+# AI/LLM related files
+.claude/
+.cursor/
+.aider*
+.continue/
+.copilot/
+*.prompt
+*.prompts
+*-prompt.txt
+*-prompts.txt
+ai-instructions/
+llm-context/
+.anthropic/
+.openai/
+conversation-logs/
+claude-conversations/
+gpt-conversations/
+ai-generated/
+prompt-engineering/
