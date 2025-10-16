@@ -44,8 +44,6 @@ This website is built with:
         ├── Marc Riera Head of Infrastructure Services.pdf
         ├── Cover letter Head of IT Operations.pdf
         ├── Marc Riera Head of Platform Engineering-cover letter.pdf
-        ├── 20240705 Reference letter for Marc Riera - Mallory Freeberg.pdf
-        └── 20240702 Reference letter for Marc Riera - Cortes-Ciriano.pdf
 ```
 
 ## 🌐 Features
@@ -143,8 +141,7 @@ Place these PDF files in `assets/documents/`:
 - `Marc Riera Head of Infrastructure Services.pdf`
 - `Cover letter Head of IT Operations.pdf`
 - `Marc Riera Head of Platform Engineering-cover letter.pdf`
-- `20240705 Reference letter for Marc Riera - Mallory Freeberg.pdf`
-- `20240702 Reference letter for Marc Riera - Cortes-Ciriano.pdf`
+
 
 ### Adding New Documents
 1. Upload PDF to `assets/documents/`
