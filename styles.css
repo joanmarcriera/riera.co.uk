@@ -157,8 +157,7 @@ ul {
 }
 
 .eyebrow,
-.section-label,
-.link-card__eyebrow {
+.section-label {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -171,8 +170,7 @@ ul {
 }
 
 .eyebrow::before,
-.section-label::before,
-.link-card__eyebrow::before {
+.section-label::before {
     content: "";
     width: 0.7rem;
     height: 0.7rem;
@@ -271,7 +269,8 @@ h3 {
 
 .hero-notes,
 .credential-list,
-.focus-list {
+.focus-list,
+.capability-list {
     display: grid;
     gap: 0.75rem;
     padding: 0;
@@ -281,7 +280,8 @@ h3 {
 
 .hero-notes li,
 .credential-list li,
-.focus-list li {
+.focus-list li,
+.capability-list li {
     position: relative;
     padding-left: 1.35rem;
     color: var(--muted);
@@ -289,7 +289,8 @@ h3 {
 
 .hero-notes li::before,
 .credential-list li::before,
-.focus-list li::before {
+.focus-list li::before,
+.capability-list li::before {
     content: "";
     position: absolute;
     top: 0.6rem;
@@ -332,7 +333,6 @@ h3 {
 .signal-card p,
 .impact-card p,
 .timeline-item p,
-.link-card p,
 .contact-card p,
 .card p {
     color: var(--muted);
@@ -369,12 +369,20 @@ h3 {
 .impact-card h3,
 .fit-card h3,
 .timeline-item h3,
-.link-card h3 {
+.skill-card h3 {
     margin: 0.75rem 0 0.7rem;
 }
 
 .fit-card {
     min-height: 15.5rem;
+}
+
+.skill-card {
+    min-height: 20rem;
+}
+
+.skills-grid {
+    align-items: stretch;
 }
 
 .timeline {
@@ -400,24 +408,6 @@ h3 {
 .credential-note {
     margin-top: 1rem;
     color: var(--muted);
-}
-
-.link-card {
-    min-height: 16rem;
-    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-}
-
-.link-card:hover,
-.link-card:focus-visible {
-    transform: translateY(-4px);
-    border-color: rgba(180, 90, 51, 0.35);
-    background: rgba(255, 252, 247, 0.95);
-}
-
-.link-card__cta {
-    margin-top: auto;
-    color: var(--accent-dark);
-    font-weight: 700;
 }
 
 .contact-card {
@@ -496,7 +486,7 @@ h3 {
 
     .card,
     .button,
-    .link-card {
+    .skill-card {
         animation: none;
         transition: none;
     }
