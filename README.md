@@ -4,7 +4,8 @@ Static landing page for [riera.co.uk](https://riera.co.uk/).
 
 ## Public Site Network
 
-- `riera.co.uk`: personal and operator layer
+- `riera.co.uk`: commercial front door for the paid Automation Audit
+- `cv.riera.co.uk`: preserved CV and operator profile
 - `cxo.riera.co.uk`: strategy and executive layer
 - `sme.riera.co.uk`: practical SME systems and demo layer
 
