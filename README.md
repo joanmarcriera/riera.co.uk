@@ -1,23 +1,26 @@
 # riera.co.uk
 
-Static landing page for [riera.co.uk](https://riera.co.uk/).
+Professional portfolio and consulting landing page for [riera.co.uk](https://riera.co.uk/).
 
-## Public Site Network
+## Structure
 
-- `riera.co.uk`: commercial front door for the paid Automation Audit
-- `cv.riera.co.uk`: preserved CV and operator profile
-- `cxo.riera.co.uk`: strategy and executive layer
-- `sme.riera.co.uk`: practical SME systems and demo layer
+- `index.html` — single-page portfolio: about, experience, work, credentials, consulting, contact
+- `styles.css` — site styling (Cormorant Garamond + Karla, warm cream + teal accent)
+- `app.js` — scroll reveal, mobile nav, audit form submission (n8n webhook)
+- `CNAME` — custom domain binding
+- `assets/documents/` — publications and reference materials
 
-The live automation stack and app URLs remain on `joanmarcriera.es` and its subdomains. This repo should not repoint those links away from that live stack domain.
+## Site Network
+
+- `riera.co.uk` — portfolio and consulting front door
+- `cv.riera.co.uk` — preserved CV surface
+- `cxo.riera.co.uk` — strategy and executive layer
+- `sme.riera.co.uk` — practical SME systems and demo layer
+
+## Adding Work Items
+
+To add a new case study, publication, or blog post, copy one of the `<article class="work-card">` blocks in the Work section of `index.html` and update the content. Supported types: `Case Study`, `Publication`, `Blog Post`, `Talk`.
 
 ## Deployment
 
-- GitHub Pages serves the repository root.
-- `index.html` is the published landing page.
-- `styles.css` contains the site styling.
-- `CNAME` pins the custom domain to `riera.co.uk`.
-
-## Updating
-
-Edit the root static files, commit to `main`, and push to publish the landing page update.
+GitHub Pages serves from the `main` branch root. Edit, commit, push.

@@ -3,232 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Joan Marc Riera helps UK and EU SMEs replace repetitive admin with practical automation, fixed-scope delivery, and self-hosted operational systems.">
-    <meta name="keywords" content="Joan Marc Riera, SME automation, AI systems, workflow automation, monitoring, n8n, self hosted operations">
-    <meta name="theme-color" content="#143331">
-    <meta property="og:title" content="Joan Marc Riera | SME Automation &amp; AI Systems">
-    <meta property="og:description" content="Paid Automation Audit, fixed-scope implementation sprint, and monitoring retainer for practical SMEs.">
+    <meta name="description" content="Joan Marc Riera — Infrastructure leader and technical strategist. 20+ years building platforms serving global research communities.">
+    <meta name="keywords" content="Joan Marc Riera, infrastructure leadership, platform engineering, EMBL-EBI, SME automation, CITP, CTO">
+    <meta name="theme-color" content="#2d5a4e">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta property="og:title" content="Joan Marc Riera — Infrastructure & Platform Leadership">
+    <meta property="og:description" content="Senior technical leader. 20+ years of infrastructure, platform engineering, and operational leadership.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://riera.co.uk/">
     <link rel="canonical" href="https://riera.co.uk/">
-    <title>Joan Marc Riera | SME Automation &amp; AI Systems</title>
+    <title>Joan Marc Riera — Infrastructure &amp; Platform Leadership</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-shell">
-        <header class="site-header">
-            <div class="site-header__inner container">
-                <a class="brand" href="#top">Joan Marc Riera</a>
-                <nav class="site-nav" aria-label="Primary">
-                    <a href="#offer">Offer</a>
-                    <a href="#proof">Proof</a>
-                    <a href="#use-cases">Use Cases</a>
-                    <a href="#process">Process</a>
-                    <a href="#audit">Audit</a>
-                </nav>
-            </div>
-        </header>
 
-        <main id="top">
-            <section class="hero container">
-                <div class="hero-copy card card--hero">
-                    <p class="eyebrow">UK personal brand / SME Automation &amp; AI Systems</p>
-                    <p class="hero-intro">A paid entry point for operators who want less manual work and more visible delivery.</p>
-                    <h1>I turn repetitive SME operations into explicit systems that can be trusted.</h1>
-                    <p class="hero-summary">
-                        I work with small companies that have already outgrown ad-hoc admin but do not want to buy another pile of seat-based SaaS.
-                        The entry point is a paid Automation Audit. From there I deliver one fixed-scope sprint, document the result properly,
-                        and only then move into a light monitoring retainer if the work deserves it.
-                    </p>
-                    <p class="hero-summary hero-summary--tight">
-                        This is not vague advisory. It is practical workflow automation, monitoring, onboarding, triage, and handover built on a live stack:
-                        EspoCRM, n8n, BookStack, Vikunja, and Grafana, with a public strategy layer on <a href="https://cxo.riera.co.uk/">cxo.riera.co.uk</a>
-                        and a concrete demo surface on <a href="https://sme.riera.co.uk/">sme.riera.co.uk</a>. The previous CV-led operator page remains on
-                        <a href="https://cv.riera.co.uk/">cv.riera.co.uk</a>.
-                    </p>
-                    <div class="hero-actions">
-                        <a class="button button--primary" href="#audit">Book The Audit</a>
-                        <a class="button button--secondary" href="https://sme.riera.co.uk/" target="_blank" rel="noopener noreferrer">See The Demo Stack</a>
-                    </div>
-                    <ul class="hero-notes">
-                        <li>Based in Cambridge, working with UK and EU SMEs</li>
-                        <li>Paid entry point: no free “pick my brain” discovery calls</li>
-                        <li>Best fit for companies with real operational pain and a bias for ownership</li>
-                        <li>Delivery stays small, explicit, and documented</li>
-                    </ul>
+    <header class="site-header" id="top">
+        <div class="header-inner container">
+            <a class="wordmark" href="#top">JMR</a>
+            <nav class="nav" id="main-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#work">Work</a>
+                <a href="#credentials">Credentials</a>
+                <a href="#consulting">Consulting</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════ HERO ═══════════════════ -->
+        <section class="hero" aria-label="Introduction">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <p class="hero-eyebrow">Infrastructure · Platform Engineering · Technical Strategy</p>
+                    <h1 class="hero-name">Joan Marc<br>Riera</h1>
+                    <p class="hero-tagline">Building and scaling platforms that serve<br>
+                        50,000+ researchers across 80+ countries.</p>
+                    <p class="hero-sub">Cambridge CTO Programme · Oxford Executive Finance · BCS</p>
                 </div>
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <span class="stat-number">150<span class="stat-unit">PB+</span></span>
+                        <span class="stat-label">Data managed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4,500<span class="stat-unit">+</span></span>
+                        <span class="stat-label">Servers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20<span class="stat-unit">+</span></span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Direct reports</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <aside class="hero-aside">
-                    <div class="card stat-card">
-                        <p class="section-label">Commercial Shape</p>
-                        <div class="stat-list">
-                            <div class="stat-item">
-                                <span class="stat-value">£750</span>
-                                <span class="stat-caption">Automation Audit, paid upfront</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">£2,500</span>
-                                <span class="stat-caption">7-day implementation sprint</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">£300/mo</span>
-                                <span class="stat-caption">monitoring and light maintenance retainer</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">5 days</span>
-                                <span class="stat-caption">audit turnaround to roadmap and sprint proposal</span>
-                            </div>
+        <!-- ═══════════════════ ABOUT ═══════════════════ -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-number">01</span>
+                    <h2>About</h2>
+                </div>
+                <div class="about-grid reveal">
+                    <div class="about-text">
+                        <p class="lead">Senior infrastructure and platform leader with over 20 years of experience in large-scale data systems. Most recently Deputy Head of Operations at EMBL-EBI, Europe's leading bioinformatics institute.</p>
+                        <p>I have been accountable for petabyte-scale storage, transfer services, identity and access management, and operational tooling serving a global research community. My work spans architecture, strategic planning, team leadership, vendor management, and cost optimisation — always with a practical bias for delivery and operational sustainability.</p>
+                        <p>I hold executive education from Cambridge Judge Business School and the University of Oxford, alongside professional certifications in ITIL, PRINCE2, and cloud technologies. I am a member of BCS, The Chartered Institute for IT.</p>
+                        <p>Currently available for senior leadership roles and consulting engagements focused on infrastructure strategy, platform operations, and practical automation for SMEs.</p>
+                    </div>
+                    <aside class="about-aside">
+                        <div class="aside-block">
+                            <h3>Based in</h3>
+                            <p>Cambridgeshire, UK</p>
+                        </div>
+                        <div class="aside-block">
+                            <h3>Specialisms</h3>
+                            <p>Infrastructure operations, platform engineering, data architecture, IAM, service management, team leadership</p>
+                        </div>
+                        <div class="aside-block">
+                            <h3>Industries</h3>
+                            <p>Research & science, HPC, enterprise IT, SME operations</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+        <section class="section section--alt" id="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-number">02</span>
+                    <h2>Experience</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2021 – 2026</div>
+                        <div class="timeline-body">
+                            <h3>Deputy Head of Operations</h3>
+                            <p class="timeline-org">EMBL-EBI — European Bioinformatics Institute</p>
+                            <p>Led multidisciplinary teams accountable for petabyte-scale data platforms, archive systems, transfer services, identity management, and operational tooling. Managed 8 direct reports and influenced ~20 across the organisation. Owned a £1M annual infrastructure budget. Drove FIRE archive growth from 15PB to 150PB+, introduced unified monitoring across 4,500+ servers, and led the institution-wide IAM modernisation programme.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2016 – 2020</div>
+                        <div class="timeline-body">
+                            <h3>Active Archive SW Manager / Transfer &amp; IAM Lead</h3>
+                            <p class="timeline-org">EMBL-EBI</p>
+                            <p>Designed and delivered the FIRE archive system. Consolidated 35 transfer-service endpoints to 9, reducing complexity by 94% and increasing throughput by 500%. Led the UK Biobank COVID-19 data ingest (3.9PB under critical deadline). Initiated IAM modernisation across 6 EMBL sites for 5,000+ users.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2014 – 2016</div>
+                        <div class="timeline-body">
+                            <h3>Solutions Architect &amp; Technical Service Manager</h3>
+                            <p class="timeline-org">Atos (ex-Bull)</p>
+                            <p>Customer-facing solutions architecture for enterprise HPC, private cloud, and database platforms. Secured >$1M in new business. Deployed 200+ node HPC clusters in under 16 minutes.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2011 – 2014</div>
+                        <div class="timeline-body">
+                            <h3>Infrastructure Team Lead / Technical Consultant</h3>
+                            <p class="timeline-org">BULL SAS</p>
+                            <p>Led infrastructure delivery teams across Linux, Windows, AIX, and macOS environments. Managed customer-facing HPC and enterprise deployments with contractual SLAs.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2007 – 2011</div>
+                        <div class="timeline-body">
+                            <h3>Research Infrastructure &amp; Platforms Lead</h3>
+                            <p class="timeline-org">Fundació Barcelona Media 22@ — EURECAT</p>
+                            <p>Built and operated the research computing platform supporting growth from 50 to 250 people. Managed HPC, storage, and network infrastructure for media and signal-processing research.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ WORK ═══════════════════ -->
+        <section class="section" id="work">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-number">03</span>
+                    <h2>Work</h2>
+                    <p class="section-sub">Selected case studies, publications, and technical contributions.</p>
+                </div>
+                <div class="work-grid">
+
+                    <!-- ADD NEW WORK ITEMS HERE — copy an <article> block -->
+
+                    <article class="work-card reveal">
+                        <span class="work-type">Case Study</span>
+                        <h3>FIRE Archive: Scaling to 150PB+</h3>
+                        <p>Led the redesign and growth of EMBL-EBI's FIRE archive from 10PB to 150PB+ active data (~400PB raw), serving 50,000+ researchers. Introduced tape-based disaster recovery reducing TCO by 70% and RTO from months to days.</p>
+                        <time>2016 – 2026</time>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span class="work-type">Case Study</span>
+                        <h3>Transfer Services Rationalisation</h3>
+                        <p>Consolidated 35 transfer-service endpoints to 9 standardised platforms, reducing operational complexity by 94% and increasing throughput by 500%. Included the emergency 3.9PB UK Biobank COVID-19 ingest.</p>
+                        <time>2016 – 2023</time>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span class="work-type">Case Study</span>
+                        <h3>IAM Modernisation Across EMBL</h3>
+                        <p>Led the identity and access management programme across 6 EMBL sites and 5,000+ users. Established centralised identity governance, HR-driven lifecycle management, and role-based access control, reducing identity-related incidents by 75–95%.</p>
+                        <time>2019 – 2025</time>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span class="work-type">Case Study</span>
+                        <h3>Zero-Downtime Datacentre Migration</h3>
+                        <p>Delivered EMBL-EBI's first zero-downtime datacentre migration using VLAN stretching, maintaining service continuity during a full physical relocation of critical infrastructure.</p>
+                        <time>2022</time>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span class="work-type">Publication</span>
+                        <h3>The EMBL-EBI File Replication Archive Hits 100 Petabytes</h3>
+                        <p>Press release and technical overview documenting the FIRE archive milestone, covering architecture, growth patterns, and the role of erasure coding and geo-dispersed replication.</p>
+                        <time>2024</time>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span class="work-type">Publication</span>
+                        <h3>Data Archiving Through the Generations</h3>
+                        <p>Conference paper presented at MSST 2020 on EMBL-EBI's approach to long-term data archiving, covering the evolution of storage architecture and operational practices at petabyte scale.</p>
+                        <time>2020</time>
+                    </article>
+
+                    <!-- END WORK ITEMS -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ CREDENTIALS ═══════════════════ -->
+        <section class="section section--alt" id="credentials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-number">04</span>
+                    <h2>Credentials</h2>
+                </div>
+                <div class="credentials-grid">
+                    <div class="credentials-col reveal">
+                        <h3>Education</h3>
+                        <div class="credential-item">
+                            <strong>CTO Programme — Organisational Leadership</strong>
+                            <span>Cambridge Judge Business School · 2024 – 2025</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>Strategic Thinking for the CXO</strong>
+                            <span>Cambridge Judge Business School · 2025</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>Steering Complex Projects</strong>
+                            <span>Cambridge Judge Business School · 2024 – 2025</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>Oxford Executive Finance Programme</strong>
+                            <span>Saïd Business School, University of Oxford · 2025 – 2026</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>BSc Computer Science &amp; Engineering</strong>
+                            <span>Universitat Ramon Llull — LaSalle, Barcelona · 2001 – 2005</span>
                         </div>
                     </div>
-
-                    <div class="card signal-card">
-                        <p class="section-label">Working Principle</p>
-                        <h2>Start with the commercial pain, not the tooling wishlist.</h2>
-                        <p>
-                            The point is to make admin time visible, remove friction from one operational flow,
-                            and leave behind runbooks and ownership boundaries that survive after the sprint ends.
-                        </p>
+                    <div class="credentials-col reveal">
+                        <h3>Certifications</h3>
+                        <div class="credential-item">
+                            <strong>ITIL 4 Strategist: Direct, Plan &amp; Improve</strong>
+                            <span>PeopleCert / AXELOS · 2026</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>PRINCE2 Agile® Practitioner</strong>
+                            <span>PeopleCert / AXELOS · 2020</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>NVIDIA — Accelerated Data Science &amp; Adding Knowledge to LLMs</strong>
+                            <span>NVIDIA · 2025</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>ITIL v4 Foundation</strong>
+                            <span>PeopleCert / AXELOS · 2023</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>Red Hat RHCSA + RHCE</strong>
+                            <span>Red Hat · 2011</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>Oracle 11g OCA + OCP</strong>
+                            <span>Oracle · 2014 – 2015</span>
+                        </div>
                     </div>
-                </aside>
-            </section>
-
-            <section class="section container" id="offer">
-                <div class="section-heading">
-                    <p class="section-label">Offer</p>
-                    <h2>One entry point, one sprint, one retainer.</h2>
-                    <p class="section-note">
-                        This commercial shape is deliberate. It keeps the work bounded, the cash flow explicit, and the delivery small enough to stay high quality.
-                    </p>
                 </div>
-                <div class="grid grid--three">
-                    <article class="card offer-card">
-                        <p class="surface-card__kicker">Phase 1</p>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ CONSULTING ═══════════════════ -->
+        <section class="section" id="consulting">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-number">05</span>
+                    <h2>Consulting</h2>
+                    <p class="section-sub">For UK and EU SMEs that have outgrown ad-hoc admin but don't want another pile of seat-based SaaS.</p>
+                </div>
+                <div class="offer-grid reveal">
+                    <article class="offer-card">
+                        <span class="offer-phase">Phase 1</span>
                         <h3>Automation Audit</h3>
                         <p class="offer-price">£750</p>
-                        <p>
-                            Includes the intake review, a 60-minute discovery session, a system map, the top 3 automation opportunities,
-                            rough ROI framing, and a fixed-scope sprint proposal within 5 business days.
-                        </p>
+                        <p>Intake review, 60-minute discovery, system map, top 3 automation opportunities, rough ROI framing, and a fixed-scope sprint proposal within 5 business days.</p>
                     </article>
-                    <article class="card offer-card offer-card--featured">
-                        <p class="surface-card__kicker">Phase 2</p>
+                    <article class="offer-card offer-card--featured">
+                        <span class="offer-phase">Phase 2</span>
                         <h3>Implementation Sprint</h3>
                         <p class="offer-price">£2,500</p>
-                        <p>
-                            One workflow or monitoring system delivered in 7 calendar days with one revision round,
-                            BookStack handover notes, and 14 days of email hypercare.
-                        </p>
+                        <p>One workflow or monitoring system delivered in 7 calendar days with one revision round, handover documentation, and 14 days of email hypercare.</p>
                     </article>
-                    <article class="card offer-card">
-                        <p class="surface-card__kicker">Phase 3</p>
+                    <article class="offer-card">
+                        <span class="offer-phase">Phase 3</span>
                         <h3>Monitoring Retainer</h3>
-                        <p class="offer-price">£300/mo</p>
-                        <p>
-                            For clients who want uptime, SSL, endpoint visibility, and one monthly report without turning this into another bloated contract.
-                        </p>
+                        <p class="offer-price">£300<span>/mo</span></p>
+                        <p>Uptime, SSL, endpoint visibility, and one monthly report without turning this into another bloated contract.</p>
                     </article>
                 </div>
-            </section>
 
-            <section class="section container" id="proof">
-                <div class="section-heading">
-                    <p class="section-label">Proof</p>
-                    <h2>This is already running as a real stack, not a slide deck.</h2>
-                </div>
-                <div class="grid grid--three">
-                    <article class="card surface-card">
-                        <p class="surface-card__kicker">Operator Surface</p>
-                        <h3>riera.co.uk</h3>
-                        <p>The personal and commercial entry layer: who I am, what I sell, and where the paid audit starts.</p>
-                        <span class="surface-card__status">You are here</span>
-                    </article>
-                    <article class="card surface-card">
-                        <p class="surface-card__kicker">Strategy Layer</p>
-                        <h3>cxo.riera.co.uk</h3>
-                        <p>Technical leadership, operating models, service design, and the systems thinking behind the delivery.</p>
-                        <a class="surface-card__link" href="https://cxo.riera.co.uk/" target="_blank" rel="noopener noreferrer">Open cxo.riera.co.uk</a>
-                    </article>
-                    <article class="card surface-card">
-                        <p class="surface-card__kicker">Demo Layer</p>
-                        <h3>sme.riera.co.uk</h3>
-                        <p>The inspectable SME automation stack with live tooling, workflow catalog, and the delivery model behind the sprint.</p>
-                        <a class="surface-card__link" href="https://sme.riera.co.uk/" target="_blank" rel="noopener noreferrer">Open sme.riera.co.uk</a>
-                    </article>
-                </div>
-                <div class="proof-band">
-                    <div class="proof-item"><strong>20+</strong><span>years of infrastructure and operations work</span></div>
-                    <div class="proof-item"><strong>Live</strong><span>CRM, tasks, docs, automation, and monitoring already online</span></div>
-                    <div class="proof-item"><strong>Open</strong><span>public strategy and demo surfaces, not hidden decks</span></div>
-                </div>
-            </section>
-
-            <section class="section container" id="use-cases">
-                <div class="section-heading">
-                    <p class="section-label">Use Cases</p>
-                    <h2>Start with one operational bottleneck that is expensive to ignore.</h2>
-                </div>
-                <div class="grid grid--three">
-                    <article class="card">
-                        <h3>Lead intake and follow-up</h3>
-                        <p>Capture demand consistently, notify the right person fast, and move the lead into CRM without retyping anything.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Onboarding and support triage</h3>
-                        <p>Turn scattered onboarding tasks, inbox churn, and slow support loops into a visible workflow with named ownership.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Website monitoring and operational reporting</h3>
-                        <p>Track uptime, SSL expiry, endpoint health, and a small set of reporting metrics without buying a heavy stack.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section container" id="process">
-                <div class="section-heading">
-                    <p class="section-label">Process</p>
-                    <h2>Small, explicit, and commercially legible.</h2>
-                </div>
-                <div class="grid grid--three process-grid">
-                    <article class="card process-card">
-                        <span class="process-step">01</span>
-                        <h3>Book the paid audit</h3>
-                        <p>The form below captures the current tools, repetitive work, and the outcome you actually want.</p>
-                    </article>
-                    <article class="card process-card">
-                        <span class="process-step">02</span>
-                        <h3>Get the audit pack</h3>
-                        <p>You receive the system map, top opportunities, commercial framing, and a fixed-scope sprint proposal.</p>
-                    </article>
-                    <article class="card process-card">
-                        <span class="process-step">03</span>
-                        <h3>Run one sprint well</h3>
-                        <p>One workflow, one handover, one monitoring path. If the result matters, we keep it healthy with the retainer.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section container" id="audit">
-                <div class="section-heading">
-                    <p class="section-label">Book The Audit</p>
-                    <h2>Request the paid Automation Audit.</h2>
-                    <p class="section-note">
-                        The audit is the commercial entry point. If the form submission fails, email <a href="mailto:joanmarcriera@gmail.com">joanmarcriera@gmail.com</a>.
-                    </p>
-                </div>
-                <div class="card audit-card">
+                <div class="audit-form-wrapper reveal">
+                    <h3>Request the Automation Audit</h3>
+                    <p class="form-intro">If the form fails, email <a href="mailto:joanmarcriera@gmail.com">joanmarcriera@gmail.com</a> and mention "Automation Audit".</p>
                     <form id="audit-form" class="audit-form" novalidate>
-                        <div class="form-grid">
+                        <div class="form-row">
                             <label class="field">
                                 <span>Name</span>
                                 <input id="name" name="name" type="text" required placeholder="Your name">
                             </label>
                             <label class="field">
-                                <span>Reply email</span>
+                                <span>Email</span>
                                 <input id="email" name="email" type="email" required placeholder="you@company.com">
                             </label>
+                        </div>
+                        <div class="form-row">
                             <label class="field">
                                 <span>Company</span>
                                 <input id="company" name="company" type="text" required placeholder="Company name">
@@ -237,57 +329,96 @@
                                 <span>Website</span>
                                 <input id="website" name="website" type="url" required placeholder="https://example.com">
                             </label>
+                        </div>
+                        <div class="form-row">
                             <label class="field">
                                 <span>Team size</span>
                                 <select id="team_size" name="team_size" required>
                                     <option value="">Select…</option>
-                                    <option value="1-5">1-5 people</option>
-                                    <option value="6-20">6-20 people</option>
-                                    <option value="21-50">21-50 people</option>
+                                    <option value="1-5">1–5 people</option>
+                                    <option value="6-20">6–20 people</option>
+                                    <option value="21-50">21–50 people</option>
                                     <option value="50+">50+ people</option>
                                 </select>
                             </label>
                             <label class="field">
-                                <span>Estimated admin time lost each month</span>
+                                <span>Admin time lost / month</span>
                                 <select id="admin_time_lost" name="admin_time_lost" required>
                                     <option value="">Select…</option>
                                     <option value="under-5-hours">Under 5 hours</option>
-                                    <option value="5-10-hours">5-10 hours</option>
-                                    <option value="10-20-hours">10-20 hours</option>
+                                    <option value="5-10-hours">5–10 hours</option>
+                                    <option value="10-20-hours">10–20 hours</option>
                                     <option value="20-plus-hours">20+ hours</option>
                                 </select>
                             </label>
                         </div>
                         <label class="field">
                             <span>Current tools</span>
-                            <textarea id="current_tools" name="current_tools" rows="3" required placeholder="CRM, email, spreadsheets, project tracking, support inbox, analytics"></textarea>
+                            <textarea id="current_tools" name="current_tools" rows="2" required placeholder="CRM, email, spreadsheets, support inbox…"></textarea>
                         </label>
                         <label class="field">
                             <span>Most repetitive process</span>
-                            <textarea id="repetitive_process" name="repetitive_process" rows="3" required placeholder="What keeps happening manually that should not?"></textarea>
+                            <textarea id="repetitive_process" name="repetitive_process" rows="2" required placeholder="What keeps happening manually that shouldn't?"></textarea>
                         </label>
                         <label class="field">
                             <span>Desired outcome</span>
-                            <textarea id="desired_outcome" name="desired_outcome" rows="3" required placeholder="What should be true after the audit and sprint?"></textarea>
+                            <textarea id="desired_outcome" name="desired_outcome" rows="2" required placeholder="What should be true after the audit and sprint?"></textarea>
                         </label>
                         <label class="consent-field">
                             <input id="contact_consent" name="contact_consent" type="checkbox" required>
                             <span>I consent to being contacted about this paid audit request.</span>
                         </label>
                         <div class="form-actions">
-                            <button class="button button--primary" type="submit">Send Audit Request</button>
-                            <p class="form-note">Payment and scheduling are handled after qualification. This request creates a lead in the live stack.</p>
+                            <button class="btn btn--primary" type="submit">Send Audit Request</button>
                         </div>
                     </form>
                     <div id="form-status" class="form-status" aria-live="polite"></div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <footer class="footer container">
-                <p>Practical automation for SMEs. Strategy on <a href="https://cxo.riera.co.uk/">cxo.riera.co.uk</a>. Demo stack on <a href="https://sme.riera.co.uk/">sme.riera.co.uk</a>. Previous CV surface on <a href="https://cv.riera.co.uk/">cv.riera.co.uk</a>.</p>
-            </footer>
-        </main>
-    </div>
+        <!-- ═══════════════════ CONTACT ═══════════════════ -->
+        <section class="section section--alt" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-number">06</span>
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-grid reveal">
+                    <div class="contact-block">
+                        <h3>Get in touch</h3>
+                        <p>Open to senior leadership roles, consulting engagements, and advisory work in infrastructure, platform engineering, and operational strategy.</p>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:joanmarcriera@gmail.com" class="contact-link">
+                            <span class="contact-link-label">Email</span>
+                            <span>joanmarcriera@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/joanmarcriera" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span>linkedin.com/in/joanmarcriera</span>
+                        </a>
+                        <a href="https://github.com/joanmarcriera" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="contact-link-label">GitHub</span>
+                            <span>github.com/joanmarcriera</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; 2026 Joan Marc Riera Duocastella</span>
+            <span class="footer-links">
+                Strategy on <a href="https://cxo.riera.co.uk/" target="_blank" rel="noopener noreferrer">cxo.riera.co.uk</a>
+                · Demo stack on <a href="https://sme.riera.co.uk/" target="_blank" rel="noopener noreferrer">sme.riera.co.uk</a>
+            </span>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
