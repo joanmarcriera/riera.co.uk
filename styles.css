@@ -21,12 +21,16 @@
   --accent-2:    oklch(calc(var(--accent-l) - 6%) var(--accent-c) var(--accent-h));
   --accent-wash: oklch(var(--accent-l) var(--accent-c) var(--accent-h) / 0.06);
 
-  --font-display: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", "Helvetica Neue", system-ui, sans-serif;
   --font-body:    "Inter", "Helvetica Neue", system-ui, sans-serif;
   --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --display-tracking: -0.022em;
-  --display-weight: 500;
+  --display-weight: 600;
+
+  /* Pomelli dark layer */
+  --night:   oklch(16% 0.028 265);
+  --night-2: oklch(20% 0.03 265);
   --body-tracking: -0.005em;
   --radius: 2px;
 }
@@ -834,6 +838,118 @@ button { font: inherit; }
 }
 .foot-bottom .mono { color: var(--ink-2); }
 
+/* ─── Pomelli dark layer ───
+ * .scope-dark remaps the design tokens, so every existing component
+ * (labels, borders, signal rows, stat strip, footer grid) adapts
+ * without per-component overrides.
+ */
+.scope-dark {
+  --paper:   var(--night);
+  --paper-2: var(--night-2);
+  --ink:     oklch(96% 0.005 250);
+  --ink-2:   oklch(76% 0.012 260);
+  --ink-3:   oklch(58% 0.018 262);
+  --line:    oklch(31% 0.022 265);
+  --line-2:  oklch(40% 0.022 265);
+  --accent:      oklch(82% 0.05 250);
+  --accent-2:    oklch(88% 0.04 250);
+  --accent-wash: oklch(82% 0.05 250 / 0.08);
+  background: var(--night);
+  color: var(--ink);
+}
+
+/* Hero — dark, with a faint wireframe grid and a cold glow (CSS only, no images) */
+.hero.scope-dark {
+  position: relative;
+  overflow: hidden;
+  border-bottom: none;
+}
+.hero.scope-dark::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg,   transparent 0 47px, oklch(70% 0.03 260 / 0.07) 47px 48px),
+    repeating-linear-gradient(90deg,  transparent 0 47px, oklch(70% 0.03 260 / 0.07) 47px 48px),
+    repeating-linear-gradient(135deg, transparent 0 119px, oklch(70% 0.04 260 / 0.05) 119px 120px);
+  -webkit-mask-image: radial-gradient(120% 100% at 75% 0%, black 30%, transparent 75%);
+  mask-image: radial-gradient(120% 100% at 75% 0%, black 30%, transparent 75%);
+  pointer-events: none;
+}
+.hero.scope-dark::after {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(55% 70% at 82% 8%,  oklch(34% 0.07 262 / 0.55), transparent 70%),
+    radial-gradient(40% 50% at 10% 100%, oklch(26% 0.05 270 / 0.45), transparent 70%);
+  pointer-events: none;
+}
+.hero.scope-dark .container { position: relative; z-index: 1; }
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 18px;
+}
+.hero.scope-dark .hero-h1 {
+  font-size: clamp(2.6rem, 5.6vw, 4.4rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.hero.scope-dark .stat-strip { margin-top: 56px; }
+
+/* Header — Pomelli-style solid CTA */
+.switch-btn {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.switch-btn:hover { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+.switch-btn .kbd { color: oklch(100% 0 0 / 0.55); border-left-color: oklch(100% 0 0 / 0.25); }
+
+/* Statement band */
+.band {
+  padding: clamp(72px, 11vh, 130px) 0;
+  border-top: 1px solid var(--line);
+}
+.band-inner {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: baseline;
+}
+.band-quote {
+  grid-column: 2;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.band-sub {
+  grid-column: 2;
+  margin-top: 22px;
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  color: var(--ink-2);
+  max-width: 52ch;
+  line-height: 1.7;
+}
+.band .label { grid-row: 1; }
+
+/* Dark contact + footer adjustments */
+.contact.scope-dark { border-top: none; }
+.chrome-footer.scope-dark { border-top: 1px solid var(--line); }
+
 /* ─── Responsive ─── */
 @media (max-width: 960px) {
   .hero-head,
@@ -845,10 +961,12 @@ button { font: inherit; }
   .chrome-footer .inner,
   .sub-head-grid,
   .sub-hero .meta-grid,
-  .audit-form-wrapper {
+  .audit-form-wrapper,
+  .band-inner {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .band-quote, .band-sub { grid-column: 1; }
   .dir-row { grid-template-columns: 40px 1fr auto; gap: 16px; }
   .dir-row .dir-url, .dir-row .dir-tag { display: none; }
   .practice-row { grid-template-columns: 1fr auto; gap: 10px; }
