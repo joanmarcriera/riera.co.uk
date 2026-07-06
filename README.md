@@ -1,26 +1,34 @@
 # riera.co.uk
 
-Professional portfolio and consulting landing page for [riera.co.uk](https://riera.co.uk/).
+Single-page professional portfolio for [riera.co.uk](https://riera.co.uk/), the hub
+of a small family of sites. Served by GitHub Pages from the `main` branch root.
 
 ## Structure
 
-- `index.html` — single-page portfolio: about, experience, work, credentials, consulting, contact
-- `styles.css` — site styling (Cormorant Garamond + Karla, warm cream + teal accent)
-- `app.js` — scroll reveal, mobile nav, audit form submission (n8n webhook)
-- `CNAME` — custom domain binding
-- `assets/documents/` — publications and reference materials
+- `index.html`: the portfolio (hero, portfolio index, approach, experience,
+  credentials, platform, products, contact).
+- `styles.css`: the visual system (Inter, Space Grotesk, JetBrains Mono; light
+  sections with dark `scope-dark` bands; the ⌘K switcher).
+- `app.js`: builds the portfolio directory, the family footer, and the ⌘K site
+  switcher from the shared `SITES` array. Ships on every site in the family.
+- `CNAME`: custom domain binding.
+- `assets/documents/`: public publications and articles only.
 
-## Site Network
+## Site family
 
-- `riera.co.uk` — portfolio and consulting front door
-- `cv.riera.co.uk` — preserved CV surface
-- `cxo.riera.co.uk` — strategy and executive layer
-- `sme.riera.co.uk` — practical SME systems and demo layer
+The ⌘K switcher (press ⌘K on any page) and the footer are driven by the `SITES`
+array in `app.js`:
 
-## Adding Work Items
-
-To add a new case study, publication, or blog post, copy one of the `<article class="work-card">` blocks in the Work section of `index.html` and update the content. Supported types: `Case Study`, `Publication`, `Blog Post`, `Talk`.
+- `riera.co.uk`: portfolio and entry point
+- `cv.riera.co.uk`: curriculum vitae
+- `cxo.riera.co.uk`: CTO playbook
+- `sme.riera.co.uk`: SME automation practice (fixed-scope audit and reference stack)
+- `cnc.riera.co.uk`: CNCraft
+- `i2e.riera.co.uk`: Image to Excalidraw
+- `llm.riera.co.uk`: personal LLM notes
+- `mac.riera.co.uk`: Mac rebuild notes
 
 ## Deployment
 
-GitHub Pages serves from the `main` branch root. Edit, commit, push.
+GitHub Pages serves from the `main` branch root. Edit, commit, and push; the change
+is live within a few minutes.
