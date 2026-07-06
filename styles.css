@@ -985,3 +985,24 @@ button { font: inherit; }
   .tl-row { grid-template-columns: 1fr; gap: 6px; }
   .audit-form .form-row { grid-template-columns: 1fr; }
 }
+
+/* ─── Capability list (Platform section) ─── */
+.cap-list { display: grid; gap: 10px; max-width: 52ch; }
+.cap-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.98rem;
+  color: var(--ink-2);
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+.cap-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
