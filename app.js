@@ -13,6 +13,8 @@ const SITES = [
   { id: 'i2e', num: '05', url: 'i2e.riera.co.uk', href: 'https://i2e.riera.co.uk/',    title: 'Image to Excalidraw', desc: 'A diagram screenshot becomes an editable Excalidraw scene.',      tag: 'tool' },
   { id: 'llm', num: '06', url: 'llm.riera.co.uk', href: 'https://llm.riera.co.uk/',    title: 'Personal LLM',        desc: 'Domain-specialised, local-first LLM scaffolding with strict scope.', tag: 'lab' },
   { id: 'mac', num: '07', url: 'mac.riera.co.uk', href: 'https://mac.riera.co.uk/',    title: 'Mac rebuild',         desc: 'Opinionated MacBook Pro rebuild notes. Homebrew presets.',        tag: 'notes' },
+  { id: 'grid',    num: '08', url: 'grid.joanmarcriera.es',    href: 'https://grid.joanmarcriera.es/',    title: 'EU grid capacity map',    desc: 'Datacenter-siting map of available grid connection capacity across 8 European countries.', tag: 'product' },
+  { id: 'recover', num: '09', url: 'recover.joanmarcriera.es', href: 'https://recover.joanmarcriera.es/', title: 'Wallet Recovery Helper',  desc: 'Client-side guide to a safe wallet password recovery handoff. Ten languages.',              tag: 'product' },
 ];
 
 const currentSite = document.documentElement.dataset.site || 'hub';
