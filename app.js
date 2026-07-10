@@ -15,6 +15,8 @@ const SITES = [
   { id: 'mac', num: '07', url: 'mac.riera.co.uk', href: 'https://mac.riera.co.uk/',    title: 'Mac rebuild',         desc: 'Opinionated MacBook Pro rebuild notes. Homebrew presets.',        tag: 'notes' },
   { id: 'grid',    num: '08', url: 'grid.joanmarcriera.es',    href: 'https://grid.joanmarcriera.es/',    title: 'EU grid capacity map',    desc: 'Datacenter-siting map of available grid connection capacity across 8 European countries.', tag: 'product' },
   { id: 'recover', num: '09', url: 'recover.joanmarcriera.es', href: 'https://recover.joanmarcriera.es/', title: 'Wallet Recovery Helper',  desc: 'Client-side guide to a safe wallet password recovery handoff. Ten languages.',              tag: 'product' },
+  { id: 'blog',    num: '10', url: 'blog.riera.co.uk',        href: 'https://blog.riera.co.uk/',         title: 'Lab notes',               desc: 'Technology leadership and self-hosted AI infrastructure. No hype, just things that work.', tag: 'notes' },
+  { id: 'ev',      num: '11', url: 'ev.riera.co.uk',          href: 'https://ev.riera.co.uk/',           title: 'EV cost tool',            desc: 'UK total-cost-of-ownership decision tool: EV vs petrol, diesel, hybrid.',                   tag: 'tool' },
 ];
 
 const currentSite = document.documentElement.dataset.site || 'hub';
