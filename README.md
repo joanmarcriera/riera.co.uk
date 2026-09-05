@@ -3,6 +3,20 @@
 Single-page professional portfolio for [riera.co.uk](https://riera.co.uk/), the hub
 of a small family of sites. Served by GitHub Pages from the `main` branch root.
 
+## Quick start
+
+No build step required. To test locally:
+
+```bash
+# Serve the site (Python 3 built-in)
+python3 -m http.server 8000
+
+# Then visit http://localhost:8000
+# Press ⌘K (or Ctrl+K) to test the site switcher
+```
+
+Push changes to `main` branch; the site deploys automatically within minutes.
+
 ## Structure
 
 - `index.html`: the portfolio (hero, portfolio index, approach, experience,
@@ -27,6 +41,10 @@ array in `app.js`:
 - `i2e.riera.co.uk`: Image to Excalidraw
 - `llm.riera.co.uk`: personal LLM notes
 - `mac.riera.co.uk`: Mac rebuild notes
+- `grid.joanmarcriera.es`: EU grid capacity map
+- `recover.joanmarcriera.es`: wallet recovery helper
+- `blog.riera.co.uk`: Lab notes
+- `ev.riera.co.uk`: EV cost tool
 
 ## Deployment
 
