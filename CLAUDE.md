@@ -21,7 +21,7 @@ Test across browsers/devices before pushing to `main`; changes deploy to live wi
 
 ## Layout & conventions
 
-- **index.html** — Single-page career profile for recruiters. Sections: hero (availability, CV download), delivery record, experience, credentials, projects, home lab, contact. Career facts come only from the master CV in the CV workspace; the withdrawn "35 to 9" and "94%" transfer figures must never return. No em dashes in page text. The CV is served from `assets/marc-riera_cv.pdf`. Social meta tags for OG/Twitter cards. Font preload: Space Grotesk, Inter, JetBrains Mono from Google Fonts.
+- **index.html** — Single-page career profile for recruiters. Sections: hero (availability, CV download), delivery record, experience, credentials, projects, home lab, contact. Career facts come only from the master CV in the CV workspace; the withdrawn "35 to 9" and "94%" transfer figures must never return. No em dashes in page text. The CV is served from `assets/marc-riera_cv.pdf`. It is the quick-apply CV with the phone number removed; rebuild it with `tools/cv_strip_phone.py` whenever the CV changes, and never publish the version with the phone number. Social meta tags for OG/Twitter cards. Font preload: Space Grotesk, Inter, JetBrains Mono from Google Fonts.
 - **app.js** — Builds three components on DOMContentLoaded:
   - **Directory** (`#directory`): no longer on the hub page (the function is a no-op without the element); the hub's Projects list is static HTML reusing the `.directory` styles.
   - **Footer** (`#foot-grid`): compact family grid with URL + tag per site.
