@@ -1047,3 +1047,5 @@ button { font: inherit; }
   .foot-grid { grid-template-columns: minmax(0, 1fr); }
   .foot-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
+
+.hero-meta .deck a { color: var(--ink); border-bottom: 1px solid var(--line-2); }
