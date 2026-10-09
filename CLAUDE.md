@@ -1,6 +1,6 @@
 # riera.co.uk · CLAUDE.md
 
-**Purpose:** Static portfolio hub and site-family directory for riera.co.uk and related properties. Single-page app (SPA) serving 12+ linked sites via GitHub Pages, with keyboard-driven site switcher and unified design system.
+**Purpose:** Marc's recruiter-facing career profile (HPC and AI infrastructure architect, hands-on, who has also led) and the hub of a three-site family: this hub, cv.riera.co.uk and blog.riera.co.uk. Served by GitHub Pages, with a keyboard-driven site switcher and a shared design system. Since 2026-10-09 the former microsites (cxo, sme, cnc, i2e, llm, mac, ev, ai, p) redirect here and are not listed. joanmarcriera.es is never linked from this family.
 
 ## How to run/test
 
@@ -35,7 +35,7 @@ Test across browsers/devices before pushing to `main`; changes deploy to live wi
 - **assets/** — Images (og-card.png, apple-touch-icon.png) and public PDFs (academic publications).
 - **SITES array** (app.js, line 7) — Source of truth. Each site:
   - `id`: unique identifier; matches `data-site` on each site's `<html>`.
-  - `num`: sequential tag (00–11).
+  - `num`: sequential tag (00 hub, 01 cv, 10 blog; numbers of retired sites are not reused).
   - `url`: human-readable domain.
   - `href`: full URL.
   - `title`, `desc`, `tag`: display text and category label.
@@ -55,7 +55,8 @@ Test across browsers/devices before pushing to `main`; changes deploy to live wi
 
 - [ ] Switcher opens/closes (⌘K / Escape)
 - [ ] Current site highlighted in switcher + footer
-- [ ] All 12 sites link correctly
+- [ ] Hub, cv and blog link correctly; `grep -rn "joanmarcriera.es" --include=*.html --include=*.js .` is empty
+- [ ] `credentials/index.html` lists only titles, issuers and years
 - [ ] Fonts load from Google Fonts (check Network tab)
 - [ ] OG preview renders in social-media preview tools
 - [ ] Favicon displays on tab
