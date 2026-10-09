@@ -1049,3 +1049,6 @@ button { font: inherit; }
 }
 
 .hero-meta .deck a { color: var(--ink); border-bottom: 1px solid var(--line-2); }
+
+/* Credentials page: group headings above each timeline list */
+.cred-h { font-family: var(--font-display); font-size: 1.1rem; margin: 40px 0 8px; }
